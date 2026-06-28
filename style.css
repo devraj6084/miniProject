@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    border: none;
+}
+header{
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+h2{
+    padding-top: 30px;
+
+}
+#logo{
+    height: 100px;
+    width: 100px;
+}
+#l2{
+    height: 100px;
+    width: 100px;
+}
+#container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+/* .card {
+    width: 250px;
+    height: 450px;
+    border: 1px solid #ccc;
+    padding: 16px;
+  
+    border-radius: 10px;
+    background-color: white;
+    
+} */
+
+.card {
+    width: 250px;
+    min-height: 450px;  /* ✅ min-height use karo */
+    
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* .cart-section{
+    display: flex;
+    border: 1px solid black;
+    height: 90px;
+    
+}
+
+.details-btn{
+    border: 1px solid black;
+    text-align: center;
+
+
+} */
+
+
+.cart-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 90px;
+}
+
+.details-btn,
+.cart-section button {
+    padding: 8px 15px;
+    font-size: 14px;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+#details-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.title-div {
+    text-align: center;
+}
+
+.image-div {
+    text-align: center;
+}
+
+.image-div img {
+    width: 300px;
+    height: 400px;
+}
+
+.desc-div {
+    font-size: 18px;
+}
+
+.price-div {
+    color: green;
+    font-size: 25px;
+}
+
+
+
+#outerBox{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+    padding: 30px;
+}
+
+.card{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: #218838;
+    border-radius: 2%; 
+}
+
+
+.card h1 {
+    font-size: 18px;
+    color: #333;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card p {
+    color: green;
+    font-size: 20px;
+}
+
+.card button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* JS mein pehle class add karo */
+.buy-btn {
+    background-color: #28a745;  /* green */
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;  /* red */
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+
+
+.card {
+    /* baaki properties same rakhna */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;  /* hover effect ke liye */
+}
+
+.card:hover {
+    transform: translateY(-5px);  /* hover pe thoda upar uthega card */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);  /* hover pe shadow badh jaayegi */
+}
